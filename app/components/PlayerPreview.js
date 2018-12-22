@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 export default function PlayerPreview(props) {
+
   return (
     <Fragment>
       <div className="column">

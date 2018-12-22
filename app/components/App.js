@@ -16,9 +16,7 @@ export default function App() {
           <Route exact path='/popular' component={Popular} />
           <Route exact path='/battle' component={Battle} />
           <Route exact path='/battle/results' component={Results} />
-          <Route render={function () {
-            return <p>404: Not Found</p>
-          }} />
+          <Route render={() => <p>404: Not Found</p>} />
         </Switch>
       </div>
     </Router>
