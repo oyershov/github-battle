@@ -7,9 +7,12 @@ export default class PlayerInput extends Component {
       username: ''
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   handleSubmit(event) {
     event.preventDefault();
+    this.props.onSubmit(this.props.id, this.state.username);
   }
 
   handleChange(event) {
